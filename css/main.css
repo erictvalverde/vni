@@ -1,0 +1,393 @@
+/* Reset css - http://meyerweb.com/eric/tools/css/reset/ *//* v1.0 | 20080212 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul,li{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}/* remember to define focus styles! */:focus{outline:0}/* remember to highlight inserts somehow! */ins{text-decoration:none}del{text-decoration:line-through}/* tables still need 'cellspacing="0"' in the markup */table{border-collapse:collapse;border-spacing:0}
+
+/*Main Styles*/
+@font-face {
+	font-family: 'MankSansMedium';
+	src: url('MankSansMedium.eot');
+	src: local('MankSans Medium'), local('MankSans-Medium'), url('MankSansMedium.ttf') format('truetype');
+}
+
+html{ background:#ffffff url(../images/stripe_bg.gif);}
+body{ background:transparent url(../images/bodybg.gif) repeat-x top center; font:normal 12px/1.3em Tahoma, Arial, sans-serif;}
+#wrapper{ width:960px; margin:0 auto;}
+#contentWrap{position:relative;background:#f5f5f5 url("../images/sidebar_shadow.gif") repeat-y 640px 0;width:960px;-moz-border-radius-topright:10px ; -webkit-border-top-right-radius:10px; border-top-right-radius:10px;}
+h1, h2, h3, h4, h5, h6, p.noMatch{font-family:'MankSansMedium', Tahoma, sans-serif; font-weight:normal;}
+.seasonBgColor{ background-color:#5799c1;}
+.topMarg10{ margin-top:10px;}
+.rightMarg10{ margin-right:10px;}
+.bottMarg10{ margin-bottom:10px;}
+.leftMarg10{ margin-left:10px;}
+.noBorder{ border:0;}
+.left{float:left;}
+.right{float:right;}
+a:link, a:visited, a:hover{ color:#ff9933;}
+p.noMatch{ font-size:20px; padding:10px;}
+.addbg{background:transparent url(../images/image_header.jpg) repeat-x top center;}
+/*Header*/
+#header{width:960px; height:175px;}
+	#header h1 a{float:left; width:310px; height:125px; background:transparent url(../images/images-sprite.png) no-repeat 0 -344px; text-indent:-99999px; overflow:hidden;}
+	ul#navigation{ float:right; margin-top:120px;}
+		ul#navigation li{ float:left; padding:0 10px;}
+			ul#navigation li a{ font-family:'MankSansMedium', Tahoma, sans-serif; font-size:20px; color:#FFF; text-decoration:none;float:left; height:27px; padding-top:5px;}
+			ul#navigation li a:hover{ text-decoration:underline;}
+			ul#navigation li.social{padding: 0 5px; margin-top: -3px}
+			ul#navigation li.social a{ background:transparent url(../images/images-sprite.png) no-repeat; width:32px; text-indent:-99999px; overflow:hidden; height:32px; padding-top:0;}
+			ul#navigation li#rss a{background-position:-80px -90px;}
+			ul#navigation li#facebook a{ background-position:0 -130px;}
+			ul#navigation li#flickr a{background-position:-35px -131px;}
+			ul#navigation li#twitter a{background-position:-72px -131px;}
+			ul#navigation li#youtube a{background-position:-108px -131px;}
+
+
+		ul#navigation #busca, ul#navigation #categorias, ul#navigation #arquivos{display:none;}	
+/*Content*/
+
+#firstLevelPost, #content, #sideBar{display:inline;}
+#firstLevelPost{ font-size:14px; float:left; width:920px; margin:0 10px 0 10px; padding:10px; border-top:10px solid #f5f5f5; -moz-border-radius-topright:10px ; -webkit-border-top-right-radius:10px; border-top-right-radius:10px;}
+#firstLevelPost, #firstLevelPost a{ color:#FFF;}
+	#firstLevelPost img{ float:right; border:1px solid #fff; width:458px; height:258px;}
+	#firstLevelPost #homeVdHolder{float:right; border:0; width:458px; height:258px;}
+	#firstLevelPost p.date{ font-size:12px; color:#FFF; margin-top:10px;}
+	#firstLevelPost h2{float:left; width:445px; line-height:2.1em; margin:5px 0 10px 0;}
+	#firstLevelPost h2 a{ font-size:28px; text-decoration:none;}
+	#firstLevelPost p{ float:left;width:445px; line-height:1.3em;}
+	#firstLevelPost p.readMore{position:relative; left:-15px; margin:25px 0 10px 0; background:transparent url(../images/images-sprite.png) no-repeat 0 -175px; }
+	#firstLevelPost p.readMore a{float:left;left:-20px;text-indent:-99999px; overflow:hidden; width:145px; height:32px;}
+	#firstLevelPost p.autor{ font-size:10px; clear:left; margin-top:0px;}
+
+#content{ float:left; width:640px; margin:0; padding-bottom:30px;}
+	.secondLevelPost{position:relative; display:inline; border-bottom:1px dotted #6C9752;float:left;width:600px; margin:20px 10px 5px 10px; padding:0 10px 15px;}
+	.thirdLevelPost{display:inline;border-bottom:1px dotted #6C9752;float:left;width:280px;margin:20px 10px 0 10px; padding:0 10px 10px;}
+		.secondLevelPost img, .thirdLevelPost img{float:left; margin:0 10px 10px 0; /*width:140px;*/ height:79px;}
+		.secondLevelPost p.date, .thirdLevelPost p.date{color:#ff9933; font-size:12px;}
+		.secondLevelPost h3 a, .thirdLevelPost h3 a{float:left; width:600px; font-size:28px; line-height:1em; color:#6c9752; text-decoration:none; margin:10px 0 15px 0;}
+		.thirdLevelPost h3 a{ font-size:20px; width:280px;line-height:1em;}
+		.secondLevelPost p.readMore{position:absolute; bottom:-1px; right:10px;float:left;background:#6C9752; box-shadow:0 -2px 2px #CCCCCC;}
+		.secondLevelPost p.readMore a{float:left; width:120px; height:24px; padding:8px 0 0 15px; color:#FFF; font-family:'MankSansMedium', Tahoma, sans-serif; font-size:16px;}
+		
+		
+	.secondLevelPost, .thirdLevelPost {
+	  background-color: #F5F5F5;
+	  background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#fff)); /* Saf4+, Chrome */
+	  background-image: -webkit-linear-gradient(top, #F5F5F5, #fff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	  background-image:    -moz-linear-gradient(top, #F5F5F5, #fff); /* FF3.6 */
+	  background-image:     -ms-linear-gradient(top, #F5F5F5, #fff); /* IE10 */
+	  background-image:      -o-linear-gradient(top, #F5F5F5, #fff); /* Opera 11.10+ */
+	  background-image:         linear-gradient(top, #F5F5F5, #fff);
+	}	
+
+	.archive h2.seasonBgColor, .page h2.seasonBgColor{ background-image:url(../images/title_int_bg.png);
+						  					 background-repeat:no-repeat;
+						 					 background-position:left bottom;
+						 					 float:left; width:615px; margin:10px 0 0 -11px; padding:5px 0 15px 25px; font-size:30px; line-height:30px; color:#FFF;}
+	#fullPostList li{ float:left; width:600px; padding:5px 10px 5px 0; margin-left:10px; display:inline; border-bottom:1px dotted #6C9752;}
+	#fullPostList li:hover{ background:#FFFFFF;width:590px; padding:5px 10px 5px 10px;}
+	#fullPostList li span{ clear:both; font-size:10px!important;}
+	#fullPostList li h2{font-size:16px; font-family: Tahoma, Arial, sans-serif; margin-top:5px!important;}
+	#fullPostList li h2 a{text-decoration:none;}
+	
+	div.post{padding:0 10px;}
+	div.post p.seasonBgColor{float:left; width:auto; margin:10px 0 0 -21px; padding:5px 25px 8px 20px; color:#FFF;}
+	div.post h2{ clear:both; font-size:28px; line-height:32px; padding:20px 0; color:#6c9752;}
+	div.post p{ margin:0 0 10px 0; line-height:20px;}
+	div.post h3, div.post h4, div.post h5{ font-family:Tahoma, arial, sans-serif; font-weight:bold;}
+	div.post img{ border:5px solid #fff; max-width:608px; height:auto; margin:10px auto; text-align:center;}
+	/*div.post img.size-full{width:608px;}*/
+
+	.video-container {position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; margin: 20px 0px; }
+	.video-container iframe, .video-container object, .video-container embed{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+	
+	#post-4539 h2, #post-3959 h2{ padding:5px 0; margin-top:20px;}
+	#post-4539 h3, #post-3959 h3{ margin-top: 15px; padding-top: 10px; cursor: pointer; color:#000; border-top: 1px dotted #6C9752;}
+	#post-4539 h3:hover, h3:hover #post-3959{ text-decoration: underline;}
+	.resposta{padding-top: 5px;}
+	.js .resposta{display: none;}
+	
+	.archiveNav div{ margin-top:20px; }
+	.archiveNav a{ color:#6c9752; font-size:14px; text-decoration:none;}
+	.archiveNav .left a{background:transparent url(../images/images-sprite.png) no-repeat 15px -230px;padding:10px 0 5px 45px;}
+	.archiveNav .right a{background:transparent url(../images/images-sprite.png) no-repeat right -279px;padding:10px 25px 5px 0; margin-right:15px; display:inline;}
+
+
+	p.autor{ font-size:10px; clear:both; color:#ff9933;}
+	p.autor a{color:#ff9933;}
+	#firstLevelPost p.autor{color:#fff;}
+
+	#commetWrap{ background:#FFF; padding:10px;}
+	#commetWrap h3{font-size:28px; padding:10px 40px; color:#6c9752;}
+	#commetWrap h3{ background:#FFF url(../images/images-sprite.png) no-repeat 0 0;}
+	#commetWrap h3#postcomment{ background-position:0 -47px; margin-top:20px;}
+	#commetWrap h3 a{color:#6c9752;}
+	
+		#commentlist{ margin-top:20px;}
+		#commentlist li{ border-bottom:1px dotted #6c9752;}
+		#commentlist li img{ float:left; margin:0 10px 10px 0 }
+		
+		#viagens  #commentlist li {padding-bottom: 15px; margin-bottom: 10px;}
+		#viagens .avatar{ margin-bottom: 50px;}
+		#viagens .vg_det{ margin-bottom: 2px;}
+
+		#commentform label{ float:left; width:600px; margin-bottom:5px;}
+		#commentform input, #commentform textarea{background:#f5f5f5; border:1px solid #7b7b7b; width:585px; padding:5px; font:12px/16px Tahoma, Arial, sans-serif}
+		#commentform input#submit{border:1px solid #FFF; background:#6c9752; padding:7px 10px; width:185px; margin-top:15px; color:#FFF; cursor:pointer; font-size:16px;}
+	
+
+	#contactForm{float:left;display:inline;width:620px;}
+	#contactForm label{ float:left; width:620px; margin:10px 0 5px;}
+	#contactForm input, #contactForm textarea{background:#fff; border:1px solid #7b7b7b; width:605px; padding:5px; font:12px/16px Tahoma, Arial, sans-serif}
+	#contactForm input#submit{border:1px solid #FFF; background:#6c9752; padding:7px 10px; width:185px; margin-top:15px; color:#FFF; cursor:pointer; font-size:16px;}
+	
+	#liveVideo{float:left; margin:20px 0 0 30px; display:inline;}
+	
+	.addthis_default_style{ margin: 20px 0;}
+	.addthisTop{ float: right; margin: 15px 0 0 0; width: 390px;}
+	.addthis_button_google_plusone{margin-top: 2px;}
+	
+.pagination {float:left; padding:25px 0 0 10px; position:relative; width:620px; text-align:center;}
+.pagination span, .pagination a {display:block; float:left; margin: 2px 2px 2px 0; padding:4px 6px; text-decoration:none; width:auto; height:17px; color:#333; }
+.pagination a:hover{border-bottom:2px solid #6C9752; height:15px; }
+.pagination .current{background: #6C9752; color:#fff; padding:4px 11px 4px 12px; }
+
+.pagination .anterior{background: url("../images/images-sprite.png") no-repeat 0 -237px transparent; padding-left:20px; width:0; text-indent:-99999px; overflow:hidden;}
+.pagination .proxima{background: url("../images/images-sprite.png") no-repeat right -286px transparent; padding-left:20px; width:0; text-indent:-99999px; overflow:hidden;}
+.pagination .oneof{ margin-right:15px;}
+
+#sideBar{ /* background:transparent url(../images/sidebar_shadow.gif) repeat-y; */ float:left; width:290px; margin:0 10px 0 0; padding:0 0 20px 20px;}
+	#sideBar div{float:left; width:290px;}
+	#sideBar h4{ background:transparent url(../images/images-sprite.png) no-repeat -286px -288px; padding:3px 0 25px 25px; margin:25px 0 0 0; font-size:20px; color:#666666;}
+	#search-3{ position:relative;} 
+		#search-3 div{ position: relative; height:40px;}
+		#search-3 label{ float:left; text-indent:-9999px; overflow:hidden; height:1px;}
+		#search-3 input, #archives-3 select{ border:2px solid #e4e4e4; background:#FFF; width:276px; height:33px; font-size:14px;}
+		#search-3 input#searchsubmit{background:transparent url(../images/images-sprite.png) no-repeat -37px -90px;position:absolute; top:4px; right:12px; text-indent:-99999px; overflow:hidden; width:35px; height:35px; border:0; cursor:pointer;}
+		
+		#sideBar div ul{float:left; margin-left:30px; display:inline;width:240px;}
+		#sideBar div ul li{ color:#666; padding:8px 0; border-bottom:1px dotted #709a57; }
+		#sideBar div ul li a{ color:#666; text-decoration:none;font-weight:bold; font-size:12px; }
+		#sideBar div ul li:hover{ background:#fcfcfc; padding-left:5px;}
+		#sideBar div select{ padding-top:5px;}
+	
+	#sideBar div h4 a{ color:#666; text-decoration:underline;}
+	
+	#sideBar div#text-4 ul{margin-left:0; width:auto;}
+	#sideBar div#text-4 ul li{ float:left; border:0;}/*Patrocinadores*/
+	#sideBar div#text-4 ul li a{float:left; width:125px;background:#DFDFDF; padding:1px;}
+	#sideBar div#text-4 ul li.fullWidth a{ width:275px; background:none;}
+	#sideBar div#text-4 ul li:hover{ background:none; padding-left:0;}
+	#sideBar div#categories-3 ul li a{font-size:14px;}
+
+	#sideBar div#sidevideo iframe{ margin-bottom:10px;}
+	
+	#sideBar #backtop{background:#FFF url(../images/images-sprite.png) no-repeat -117px  -88px; float:left; padding:10px 10px 10px 40px; margin:25px 0 0 200px; border-radius:10px; opacity:.6; font-size:1.2em; text-decoration:none;
+							 -webkit-transition: box-shadow 0.3s ease-out;  /* Saf3.2+, Chrome */
+						     -moz-transition: box-shadow 0.3s ease-out;  /* FF4+ */
+						      -ms-transition: box-shadow 0.3s ease-out;  /* IE10? */
+						       -o-transition: box-shadow 0.3s ease-out;  /* Opera 10.5+ */
+						          transition: box-shadow 0.3s ease-out;}
+	#sideBar #backtop:hover{box-shadow:0 0 5px rgba(0,0,0,.3);opacity:1;
+							 -webkit-transition: box-shadow 0.3s ease-out;  /* Saf3.2+, Chrome */
+						     -moz-transition: box-shadow 0.3s ease-out;  /* FF4+ */
+						      -ms-transition: box-shadow 0.3s ease-out;  /* IE10? */
+						       -o-transition: box-shadow 0.3s ease-out;  /* Opera 10.5+ */
+						          transition: box-shadow 0.3s ease-out;
+	}
+
+	#sideBar #backtop.hidden{ opacity:0;}
+
+/*Footer*/
+#footer{background:#7b7b7b;border-top:5px solid #fff; float:left; width:960px; padding:35px 0 0 0; }
+	#footer div.ft-top-wrapp{width: 100%; float: left; }
+	#footer div{ float:left; width:300px; margin:0 10px; display:inline; color:#FFF;}
+		#footer h5, #footer h4{ font-size:20px; margin-bottom:15px;}
+		
+		#footer #blogroll{ float:right; width:620px;}
+		#blogroll ul li{ background:transparent url(../images/images-sprite.png) no-repeat 174px -95px; float:left; margin:0 15px 5px 0; width:190px;}
+		#blogroll ul li a{color:#fff; text-decoration:none;}
+		#blogroll ul li a:hover{text-decoration:underline;}
+		
+		#footer #text-5{ float: left; margin-bottom: 15px;}
+		#footer #text-5 div{margin: 0;padding: 0;}
+		#footer #text-5 a{ float: left; clear: both; margin-bottom: 5px; color: #fff; text-decoration: none;}
+		#footer #text-5 span{ border-left: 1px solid #fff; padding:0 0 0 10px; margin:0 0 0 10px;}
+		
+	#footer p.credit{float:left; width:940px; padding:10px; margin-top:30px; color:#333; font-size:12px;}
+		#footer p.credit a{ color:#fff;}
+
+/*Geolocation*/
+#findplaces{float:left; width:640px;}
+.postIntro{display:none;}
+p.buscando {background: url("../images/buscando.gif") no-repeat 50px 50px transparent;font-size:20px;  padding: 52px 0 10px 130px;}
+
+#map_canvas{float:left; width:99%; height:500px; background:#fff; border:5px solid #fff; display:none;}
+#map_canvas .infoBox{position:relative;}
+#map_canvas .infoBox > img{position:absolute!important; bottom:20px; z-index: 1; right:3px;}
+#map_canvas .innerinfo { background:#fff; border-radius:10px; box-shadow:0 0 5px #ccc; padding:10px; width:260px; position:absolute; bottom:0; }
+#map_canvas .innerinfo h1{float:left; width:100%;color:#6C9752; font-size:16px; margin-bottom:5px; text-align:center;}
+
+
+/*Google Ads*/
+#googleAds { margin:30px 0 35px 65px; height: 65px;}	
+	
+/*fix*/
+.clearfix{ clear:both;}
+
+.video-container {
+	position: relative;
+	padding-bottom: 68%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width:960px){
+#sideBar #backtop{display:none!important;}
+body{background: none;}
+#contentWrap{background: #f5f5f5;}
+
+#contentWrap, #wrapper, #header, #content, #findplaces{width:100%; padding:0; margin:0;} 
+
+#firstLevelPost, #firstLevelPost h2, #firstLevelPost p, .secondLevelPost, .secondLevelPost h3 a, .thirdLevelPost h3 a, #sideBar, #footer, #footer p.credit, .pagination, #blogroll, #text-5, #social{width:98%; margin:0; padding:0 1%;}
+.archive h2.seasonBgColor, .page h2.seasonBgColor{width:98%; margin:0 0 15px -15px; background-image:none;}
+
+#header { height: 130px;}
+#header h1 a{ display:block; float:none; margin:0 auto;}
+
+ul#navigation {float: left; width:100%;margin-top:0; padding:20px 0;border-bottom: 1px dotted #6C9752; position: relative; z-index:100; width: 100%;}
+ul#navigation #busca, ul#navigation #categorias, ul#navigation #arquivos{display:block;}	
+ul#navigation li a {color:#6C9752; font-size:1.45em;}
+
+#firstLevelPost{padding-bottom:15px; border-top: 0; margin-top:-7px;}
+#firstLevelPost h2{width:45%;}
+#firstLevelPost p{ width:45%; font-size:1.1em; line-height:1.2em; float:none;}
+#firstLevelPost img{width:50%; height:auto; margin-top:10px; float:right;} 
+#firstLevelPost p.readMore{float:left;}
+
+
+.secondLevelPost{padding:15px 1%;}
+.secondLevelPost h3 a, .thirdLevelPost h3 a{ font-size: 22px; margin-bottom:15px;width:100%; float:left;}
+.secondLevelPost img{float:left; margin:0 10px 5px 10px;}
+.secondLevelPost p{ margin:5px 1%;}
+.secondLevelPost p.autor{font-size:.8em!important;}
+.secondLevelPost p.readMore{ margin-bottom:0;}
+
+#content p{ font-size:1.3em; line-height:1.4em;}
+
+.post.hentry img{ max-width:98%;}
+
+#commetWrap h3{font-size:1.5em; margin-bottom:10px;}
+#commentform input, #commentform textarea, #commentform label{width:96%;}
+
+.pagination{padding:15px 0;border-bottom: 1px dotted #6C9752;}
+.pagination .oneof{display:none;}
+
+div.post embed, div.post object {
+    margin: 15px auto;
+    width: 100%!important;
+}
+
+.archiveNav{float:left; width:100%; padding-bottom:20px; border-bottom: 1px dotted #6C9752;}
+
+#sideBar{ margin-bottom:20px; padding-bottom:220px; position:relative;}
+#sideBar div{width:48%;}
+#sideBar div div{width:100%;}
+#search-3 input, #archives-3 select, #sideBar div ul{width:100%; margin:0;}
+
+#sideBar #categories-3{float:left;}
+#sideBar #search-3, #sideBar #archives-3, #sideBar #text-3{float:right;}
+
+#sideBar #text-4{width:100%; position:absolute; bottom:0;}
+#sideBar #text-4 ul li{margin:0 3px 0 0; padding:0; width:15%;}
+#sideBar #text-4 ul li.fullWidth{width:35%;}
+#sideBar div#text-4 ul li a, #sideBar div#text-4 ul li.fullWidth a {width:100%;}
+#sideBar #text-4 ul li a img{width:100%; height:auto;}
+
+
+
+#footer #text-5, #footer #social {width:98%!important; margin:10px 0; padding:0 1%;}
+
+.addthisTop, #googleAds, #tweets, #credit, #footer #blogroll, #findplaces .autor{display:none!important;}
+#sideBar #categories-3 {float: left; clear: both;}
+
+}/*/mediaquery*/
+
+@media only screen and (max-width:720px){
+	#sideBar #backtop{display:none!important;}
+	#header{position:relative;}
+
+	ul#navigation{border:0; position:relative; margin-bottom:3px; margin-left:2%; width:91%;} 
+	ul#navigation li{float:left; width:100%; padding:5px 10px 1px; background:#fff; border:1px solid #f5f5f5; display:none!important;}
+	ul#navigation li a{width:90%; font-size:1.8em;}
+
+	#navigation li#home, #navigation.active li{display:block!important;}
+	ul#navigation li.social { margin-top: 0; padding: 5px 10px 1px;}
+	ul#navigation li.social a {height: 27px; padding-top: 5px; background: none; text-indent:0; width: auto; }
+	.expand{position:absolute; display:block; width:45px; height:30px; background:#E0E0E0; border:1px solid #fff; right:3.5%; bottom:-51px; z-index: 110;}
+	.expand:after {border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #000; content: " "; display:block; height: 0; width: 0; position:relative; top:11px; left:30%; position:relative; z-index:150; }
+
+	#firstLevelPost img, .secondLevelPost img{display:none;} 
+	#firstLevelPost h2{width:100%;}
+	#firstLevelPost p{ width:100%; }
+	.secondLevelPost p.readMore{position:relative; margin:10px 0 -17px;}
+	.secondLevelPost p.autor{float:right; margin:-10px 10px 0 0; font-size:.8em!important;}
+
+	#sideBar {padding-bottom:0;}
+	#sideBar div{width:100%;}
+	#sideBar div{width:98%; padding:0 1%;}
+	#sideBar #text-4{ position:relative; width:300px;}
+	#sideBar #text-4 ul li{margin:5px; width:auto;}
+	#sideBar #text-4 ul li.fullWidth{width:auto;}
+
+}/*/mediaquery*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

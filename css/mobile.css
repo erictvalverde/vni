@@ -1,0 +1,31 @@
+body {
+  background:none;
+}
+#wrapper{ width:100%; margin:0 auto;}
+#contentWrap{background:#f5f5f5;width:100%;-moz-border-radius-topright:0 ; -webkit-border-top-right-radius:0; border-top-right-radius:0;}
+#header { width:100%;}
+ul#navigation {float: left; margin-top: 5px;}
+ul#navigation li a {  color: #333;  font-size: 18px;}
+#firstLevelPost {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  float: left;
+  font-size: 14px;
+  margin: 0;
+  padding:0 3% 5% 3%;
+  width: 92%!important;
+}
+#firstLevelPost p{ float:left;width:auto; line-height:1.3em;}
+#firstLevelPost img{ display: none;}
+#firstLevelPost h2{ width: auto;}
+#content{ float:left; width:100%; margin:0; padding-bottom:30px;}
+	.secondLevelPost, .thirdLevelPost{float:left;background:none;border-bottom:1px dotted #6C9752;width:92%; margin:5px 0; padding:0 3% 30px 3%; height: auto;}
+		.secondLevelPost h3 a, .thirdLevelPost h3 a{float:left; width:100%; font-size:20px; line-height:1em; color:#6c9752; text-decoration:none; margin:10px 0;}
+		.secondLevelPost img, .thirdLevelPost img{ display: none;}
+p.readMore{display:none;}
+div.post img { border: 3px solid #FFFFFF; margin: 10px auto; max-width: 100%; text-align: center;}
+#commentform label{ float:left; width:98%; margin-bottom:5px;}
+#commentform input, #commentform textarea{background:#f5f5f5; border:1px solid #7b7b7b; width:96%; padding:2%px; font:12px/16px Tahoma, Arial, sans-serif}
+#commentform input#submit{border:1px solid #FFF; background:#6c9752; padding:5% 0; width:100%; margin-top:15px; color:#FFF; cursor:pointer; font-size:16px;}
+
+#footer, #sideBar{ display: none;}
