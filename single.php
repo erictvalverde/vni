@@ -67,4 +67,4 @@ get_header();
 <div class="clearfix"></div>
 <?php get_footer(); ?>
 <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d7ba4333a197366"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-532efd3002966c1b"></script>

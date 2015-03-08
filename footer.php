@@ -16,36 +16,54 @@
         </div>
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer") ) : ?><?php endif; ?>
       </div>
-
-    <?php /*  	<div id="social">
-          	<h5>Me siga</h5>
-               <ul>
-               	<li id="facebook"><a href="http://www.facebook.com/VidaNaIrlanda" title="Facebook : Vida Na Irlanda">Facebook</a></li>
-                    <?php //<li id="flickr"><a href="http://www.flickr.com/vidanairlanda/sets" title="Flickr">Flickr</a></li> ?>
-                    <li id="twitter"><a href="http://www.twitter.com/VidaNaIrlanda" title="Twitter">Twitter</a></li>
-                    <li id="youtube"><a href="http://www.youtube.com/user/VidaNaIrlanda" title="You Tube">You Tube</a></li>
-                    <li id="rss"><a href="http://feeds.feedburner.com/feedburner/Utkz" title="RSS Feeds">RSS</a></li>
-                    <?php // <li id="email"><a href="mailto:tarsila@vidanairlanda.com" title="E-mail">E-mail</a></li> ?>
-               </ul>
-          </div> */?>
            
           <p class="credit"><!--<?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. --> <cite><?php echo sprintf(__("Powered by <a href='http://wordpress.org/' title='%s'><strong>WordPress</strong></a>"), __("Powered by WordPress, state-of-the-art semantic personal publishing platform.")); ?></cite></p>
 	    <?php wp_footer(); ?>
           
-     </div>
+     </div><!-- close footer -->
 
 </div><!-- close wrrapper -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-2381489-4']);
-  _gaq.push(['_trackPageview']);
-  _gaq.push(['_trackPageLoadTime']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+
+<?php if ( is_home() ) { ?>
+
+ <div id="like-banner">
+  
+  <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    
 </script>
+
+
+    <div id="like-wrap">
+    <img src="<?php bloginfo('template_directory'); ?>/images/facebook_like_banner.gif" class="like-text" />
+     <span href="" class="close-like">X</span>
+     <div class="fb-like" data-href="http://www.facebook.com/VidaNaIrlanda" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div>
+    </div>
+</div>
+
+
+<?php } ?>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2381489-4', 'auto');  // Replace with your property ID.
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+
 <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/main.min.js?121"></script> <!-- main.min.js includes jQuery -->
 <script type="text/javascript">
   if(document.location.protocol=='http:'){

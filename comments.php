@@ -162,11 +162,14 @@ if ( post_password_required() ) : ?>
 
 	<p>
 	<label for="comment">Deixe sua mensagem</label>
+	
+	<p>
+		Coment&aacute;rios que n&atilde;o contribuem para o t&oacute;pico acima ser&atilde;o deletados.
+	</p>
+
 	<textarea name="comment" id="comment" cols="58" rows="10" tabindex="5"></textarea>
 	</p>
-	<p>
-		O "Vida Na Irlanda" reserva o direito de remover coment&aacute;rios que s&atilde;o promocionais, ataques pessoais ou que n&atilde;o contribuem para o t&oacute;pico abordado no artigo em quest&atilde;o.
-	</p>
+	
 
 <?php endif; ?>
 <p>

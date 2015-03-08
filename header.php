@@ -22,6 +22,15 @@
 	<link rel="me" href="https://plus.google.com/102794598167095726751?rel=author">
 	
 	<script src="<?php bloginfo('template_directory'); ?>/js/modernizr.min.js"></script>
+
+	<!-- BEGIN Tynt Script -->
+	<script type="text/javascript">
+	if(document.location.protocol=='http:'){
+		var Tynt=Tynt||[];Tynt.push('bua_wg9vCr4Qv4acwqm_6r');
+		(function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+	}
+	</script>
+	<!-- END Tynt Script -->
 	
 	<?php wp_head(); ?>
 </head>
@@ -38,7 +47,7 @@
           	   <li id="categorias"><a href="#categories-3">Categorias</a></li>
           	   <li id="arquivos"><a href="#archives-3">Arquivos</a></li>
                <li id="sobre"><a href="<?php bloginfo('url'); ?>/sobre-o-blog/">Sobre o Blog</a></li>
-               <li id="duvidas"><a href="<?php bloginfo('url'); ?>/duvidas">FAQ</a></li>
+               <li id="duvidas"><a href="<?php bloginfo('url'); ?>/duvidas">D&uacute;vidas</a></li>
                <li id="contato"><a href="/contato">Contato</a></li>
                <li id="facebook" class="social"><a href="http://www.facebook.com/VidaNaIrlanda" title="Facebook : Vida Na Irlanda" target="_blank">Facebook</a></li>
                <li id="twitter" class="social"><a href="http://www.twitter.com/VidaNaIrlanda" title="Twitter" target="_blank">Twitter</a></li>

@@ -214,6 +214,14 @@ p.noMatch{ font-size:20px; padding:10px;}
 	#footer p.credit{float:left; width:940px; padding:10px; margin-top:30px; color:#333; font-size:12px;}
 		#footer p.credit a{ color:#fff;}
 
+/*Like banner*/
+#like-banner{ opacity:0;width: 100%; float: left; background: #4c689f; position: fixed; bottom: 0; padding: 10px; box-shadow: 0 0 5px rgba(0,0,0,.8)}
+#like-wrap{width: 720px; height: 90px;  margin: 0 auto; background:  #e7ebf2; border-radius: 10px; border: 3px solid #f5f5f5}
+.close-like{float: right; padding: 5px 7px; background: #7699c1; color: #ccc; cursor: pointer; border-radius: 0 7px 0 7px;}
+#like-banner .fb-like{ float: right; margin:14px 5% 0 0;}
+.like-text{margin: 10px 0 0 3%; max-width: 100%}
+
+
 /*Geolocation*/
 #findplaces{float:left; width:640px;}
 .postIntro{display:none;}
@@ -348,6 +356,11 @@ div.post embed, div.post object {
 	#sideBar #text-4 ul li{margin:5px; width:auto;}
 	#sideBar #text-4 ul li.fullWidth{width:auto;}
 
+
+#like-banner{padding: 10px 2px; }
+#like-wrap{width:96%; margin: 2% 0;}
+.fb-like{ float: right!important; margin:14px 1% 0 0; width:55px!important}
+.like-text{margin: 30px 0 0 1%; max-width: 66%;}
 }/*/mediaquery*/
 
 
